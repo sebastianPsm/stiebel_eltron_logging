@@ -85,11 +85,11 @@ if __name__ == "__main__":
             })
 
     yaml_dict = {
-        "modules": {
+        "modules": [{
             "name": "ISGweb",
             "protocol": "tcp/ip",
-            "metrics": [metrics]
-        }
+            "metrics": metrics
+        }]
     }
 
     with open(args.out, 'w') as file:
