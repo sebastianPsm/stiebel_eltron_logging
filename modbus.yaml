@@ -212,469 +212,469 @@ modules:
     address: 400537
     metricType: gauge
     help: ''
-  - name: se_return_temperature_celsius
+  - name: se_return_temperature_hp1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400541
     metricType: gauge
     help: Heat pump 1
-  - name: se_flow_temperature_celsius
+  - name: se_flow_temperature_hp1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400542
     metricType: gauge
     help: Heat pump 1
-  - name: se_hot_gas_temperature_celsius
+  - name: se_hot_gas_temperature_hp1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400543
     metricType: gauge
     help: Heat pump 1
-  - name: se_low_pressure_bar
+  - name: se_low_pressure_hp1_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400544
     metricType: gauge
     help: Heat pump 1
-  - name: se_mean_pressure_bar
+  - name: se_mean_pressure_hp1_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400545
     metricType: gauge
     help: Heat pump 1
-  - name: se_high_pressure_bar
+  - name: se_high_pressure_hp1_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400546
     metricType: gauge
     help: Heat pump 1
-  - name: se_wp_water_flow_rate_liter_per_minute
+  - name: se_wp_water_flow_rate_hp1_liter_per_minute
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400547
     metricType: gauge
     help: Heat pump 1
-  - name: se_return_temperature_celsius
+  - name: se_return_temperature_hp2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400548
     metricType: gauge
     help: Heat pump 2
-  - name: se_flow_temperature_celsius
+  - name: se_flow_temperature_hp2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400549
     metricType: gauge
     help: Heat pump 2
-  - name: se_hot_gas_temperature_celsius
+  - name: se_hot_gas_temperature_hp2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400550
     metricType: gauge
     help: Heat pump 2
-  - name: se_low_pressure_bar
+  - name: se_low_pressure_hp2_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400551
     metricType: gauge
     help: Heat pump 2
-  - name: se_mean_pressure_bar
+  - name: se_mean_pressure_hp2_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400552
     metricType: gauge
     help: Heat pump 2
-  - name: se_high_pressure_bar
+  - name: se_high_pressure_hp2_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400553
     metricType: gauge
     help: Heat pump 2
-  - name: se_wp_water_flow_rate_liter_per_minute
+  - name: se_wp_water_flow_rate_hp2_liter_per_minute
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400554
     metricType: gauge
     help: Heat pump 2
-  - name: se_return_temperature_celsius
+  - name: se_return_temperature_hp3_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400555
     metricType: gauge
     help: Heat pump 3
-  - name: se_flow_temperature_celsius
+  - name: se_flow_temperature_hp3_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400556
     metricType: gauge
     help: Heat pump 3
-  - name: se_hot_gas_temperature_celsius
+  - name: se_hot_gas_temperature_hp3_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400557
     metricType: gauge
     help: Heat pump 3
-  - name: se_low_pressure_bar
+  - name: se_low_pressure_hp3_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400558
     metricType: gauge
     help: Heat pump 3
-  - name: se_mean_pressure_bar
+  - name: se_mean_pressure_hp3_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400559
     metricType: gauge
     help: Heat pump 3
-  - name: se_high_pressure_bar
+  - name: se_high_pressure_hp3_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400560
     metricType: gauge
     help: Heat pump 3
-  - name: se_wp_water_flow_rate_liter_per_minute
+  - name: se_wp_water_flow_rate_hp3_liter_per_minute
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400561
     metricType: gauge
     help: Heat pump 3
-  - name: se_return_temperature_celsius
+  - name: se_return_temperature_hp4_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400562
     metricType: gauge
     help: Heat pump 4
-  - name: se_flow_temperature_celsius
+  - name: se_flow_temperature_hp4_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400563
     metricType: gauge
     help: Heat pump 4
-  - name: se_hot_gas_temperature_celsius
+  - name: se_hot_gas_temperature_hp4_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400564
     metricType: gauge
     help: Heat pump 4
-  - name: se_low_pressure_bar
+  - name: se_low_pressure_hp4_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400565
     metricType: gauge
     help: Heat pump 4
-  - name: se_mean_pressure_bar
+  - name: se_mean_pressure_hp4_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400566
     metricType: gauge
     help: Heat pump 4
-  - name: se_high_pressure_bar
+  - name: se_high_pressure_hp4_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400567
     metricType: gauge
     help: Heat pump 4
-  - name: se_wp_water_flow_rate_liter_per_minute
+  - name: se_wp_water_flow_rate_hp4_liter_per_minute
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400568
     metricType: gauge
     help: Heat pump 4
-  - name: se_return_temperature_celsius
+  - name: se_return_temperature_hp5_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400569
     metricType: gauge
     help: Heat pump 5
-  - name: se_flow_temperature_celsius
+  - name: se_flow_temperature_hp5_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400570
     metricType: gauge
     help: Heat pump 5
-  - name: se_hot_gas_temperature_celsius
+  - name: se_hot_gas_temperature_hp5_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400571
     metricType: gauge
     help: Heat pump 5
-  - name: se_low_pressure_bar
+  - name: se_low_pressure_hp5_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400572
     metricType: gauge
     help: Heat pump 5
-  - name: se_mean_pressure_bar
+  - name: se_mean_pressure_hp5_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400573
     metricType: gauge
     help: Heat pump 5
-  - name: se_high_pressure_bar
+  - name: se_high_pressure_hp5_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400574
     metricType: gauge
     help: Heat pump 5
-  - name: se_wp_water_flow_rate_liter_per_minute
+  - name: se_wp_water_flow_rate_hp5_liter_per_minute
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400575
     metricType: gauge
     help: Heat pump 5
-  - name: se_return_temperature_celsius
+  - name: se_return_temperature_hp6_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400576
     metricType: gauge
     help: Heat pump 6
-  - name: se_flow_temperature_celsius
+  - name: se_flow_temperature_hp6_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400577
     metricType: gauge
     help: Heat pump 6
-  - name: se_hot_gas_temperature_celsius
+  - name: se_hot_gas_temperature_hp6_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400578
     metricType: gauge
     help: Heat pump 6
-  - name: se_low_pressure_bar
+  - name: se_low_pressure_hp6_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400579
     metricType: gauge
     help: Heat pump 6
-  - name: se_mean_pressure_bar
+  - name: se_mean_pressure_hp6_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400580
     metricType: gauge
     help: Heat pump 6
-  - name: se_high_pressure_bar
+  - name: se_high_pressure_hp6_bar
     endianness: big
     factor: 0.01
     dataType: int16
     address: 400581
     metricType: gauge
     help: Heat pump 6
-  - name: se_wp_water_flow_rate_liter_per_minute
+  - name: se_wp_water_flow_rate_hp6_liter_per_minute
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400582
     metricType: gauge
     help: Heat pump 6
-  - name: se_actual_temperature_celsius
+  - name: se_actual_temperature_heating_circuit_1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400583
     metricType: gauge
     help: Room temperature, heating circuit 1
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_heating_circuit_1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400584
     metricType: gauge
     help: Room temperature, heating circuit 1
-  - name: se_relative_humidity_percent
+  - name: se_relative_humidity_heating_circuit_1_percent
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400585
     metricType: gauge
     help: Heating circuit 1
-  - name: se_dew_point_temperature_celsius
+  - name: se_dew_point_temperature_heating_circuit_1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400586
     metricType: gauge
     help: Heating circuit 1
-  - name: se_actual_temperature_celsius
+  - name: se_actual_temperature_heating_circuit_2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400587
     metricType: gauge
     help: Room temperature, heating circuit 2
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_heating_circuit_2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400588
     metricType: gauge
     help: Room temperature, heating circuit 2
-  - name: se_relative_humidity_percent
+  - name: se_relative_humidity_heating_circuit_2_percent
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400589
     metricType: gauge
     help: Heating circuit 2
-  - name: se_dew_point_temperature_celsius
+  - name: se_dew_point_temperature_heating_circuit_2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400590
     metricType: gauge
     help: Heating circuit 2
-  - name: se_actual_temperature_celsius
+  - name: se_actual_temperature_heating_circuit_3_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400591
     metricType: gauge
     help: Room temperature, heating circuit 3
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_heating_circuit_3_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400592
     metricType: gauge
     help: Room temperature, heating circuit 3
-  - name: se_relative_humidity_percent
+  - name: se_relative_humidity_heating_circuit_3_percent
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400593
     metricType: gauge
     help: Heating circuit 3
-  - name: se_dew_point_temperature_celsius
+  - name: se_dew_point_temperature_heating_circuit_3_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400594
     metricType: gauge
     help: Heating circuit 3
-  - name: se_actual_temperature_celsius
+  - name: se_actual_temperature_heating_circuit_4_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400595
     metricType: gauge
     help: Room temperature, heating circuit 4
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_heating_circuit_4_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400596
     metricType: gauge
     help: Room temperature, heating circuit 4
-  - name: se_relative_humidity_percent
+  - name: se_relative_humidity_heating_circuit_4_percent
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400597
     metricType: gauge
     help: Heating circuit 4
-  - name: se_dew_point_temperature_celsius
+  - name: se_dew_point_temperature_heating_circuit_4_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400598
     metricType: gauge
     help: Heating circuit 4
-  - name: se_actual_temperature_celsius
+  - name: se_actual_temperature_heating_circuit_5_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400599
     metricType: gauge
     help: Room temperature, heating circuit 5
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_heating_circuit_5_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400600
     metricType: gauge
     help: Room temperature, heating circuit 5
-  - name: se_relative_humidity_percent
+  - name: se_relative_humidity_heating_circuit_5_percent
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400601
     metricType: gauge
     help: Heating circuit 5
-  - name: se_dew_point_temperature_celsius
+  - name: se_dew_point_temperature_heating_circuit_5_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400602
     metricType: gauge
     help: Heating circuit 5
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_cooling_circuit_1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400603
     metricType: gauge
     help: Room temperature, cooling circuit 1
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_cooling_circuit_2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400604
     metricType: gauge
     help: Room temperature, cooling circuit 2
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_cooling_circuit_3_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400605
     metricType: gauge
     help: Room temperature, cooling circuit 3
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_cooling_circuit_4_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400606
     metricType: gauge
     help: Room temperature, cooling circuit 4
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_cooling_circuit_5_celsius
     endianness: big
     factor: 0.1
     dataType: int16
@@ -688,42 +688,42 @@ modules:
     address: 301500
     metricType: gauge
     help: ''
-  - name: se_comfort_temperature_celsius
+  - name: se_comfort_temperature_heating_circuit_1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 301501
     metricType: gauge
     help: Heating circuit 1
-  - name: se_eco_temperature_celsius
+  - name: se_eco_temperature_heating_circuit_1_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 301502
     metricType: gauge
     help: Heating circuit 1
-  - name: se_heating_curve_rise
+  - name: se_heating_curve_rise_heating_circuit_1
     endianness: big
     factor: 0.01
     dataType: int16
     address: 301503
     metricType: gauge
     help: Heating circuit 1
-  - name: se_comfort_temperature_celsius
+  - name: se_comfort_temperature_heating_circuit_2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 301504
     metricType: gauge
     help: Heating circuit 2
-  - name: se_eco_temperature_celsius
+  - name: se_eco_temperature_heating_circuit_2_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 301505
     metricType: gauge
     help: Heating circuit 2
-  - name: se_heating_curve_rise
+  - name: se_heating_curve_rise_heating_circuit_2
     endianness: big
     factor: 0.01
     dataType: int16
