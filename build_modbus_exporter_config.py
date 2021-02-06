@@ -75,7 +75,7 @@ if __name__ == "__main__":
             address += int(row["Modbus address"])-1
 
             metrics.append({
-                "name": args.prefix + row["Object designation"].lower().replace(" ", "_") + unit_str,
+                "name": args.prefix + row["Object designation"].lower().replace(" ", "_").replace(" ", "-") + unit_str,
                 "endianness": "big",
                 "factor": factor_converter[row["Data type"]],
                 "dataType": datatype_converter[row["Data type"]],
