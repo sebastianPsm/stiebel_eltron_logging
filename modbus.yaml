@@ -940,28 +940,28 @@ modules:
     address: 402519
     metricType: gauge
     help: WPM status
-  - name: se_mixer_open,_htg_circuit_2
+  - name: se_mixer_open__htg_circuit_2
     endianness: big
     factor: 1
     dataType: uint16
     address: 402520
     metricType: gauge
     help: WPM status
-  - name: se_mixer_close,_htg_circuit_2
+  - name: se_mixer_close__htg_circuit_2
     endianness: big
     factor: 1
     dataType: uint16
     address: 402521
     metricType: gauge
     help: WPM status
-  - name: se_mixer_open,_htg_circuit_3
+  - name: se_mixer_open__htg_circuit_3
     endianness: big
     factor: 1
     dataType: uint16
     address: 402522
     metricType: gauge
     help: WPM status
-  - name: se_mixer_close,_htg_circuit_3
+  - name: se_mixer_close__htg_circuit_3
     endianness: big
     factor: 1
     dataType: uint16
@@ -1045,42 +1045,42 @@ modules:
     address: 402534
     metricType: gauge
     help: WPE status
-  - name: se_pool_pump,_primary
+  - name: se_pool_pump__primary
     endianness: big
     factor: 1
     dataType: uint16
     address: 402535
     metricType: gauge
     help: WPE status
-  - name: se_pool_pump,_secondary
+  - name: se_pool_pump__secondary
     endianness: big
     factor: 1
     dataType: uint16
     address: 402536
     metricType: gauge
     help: WPE status
-  - name: se_mixer_open,_htg_circuit_4
+  - name: se_mixer_open__htg_circuit_4
     endianness: big
     factor: 1
     dataType: uint16
     address: 402537
     metricType: gauge
     help: WPE status
-  - name: se_mixer_close,_htg_circuit_4
+  - name: se_mixer_close__htg_circuit_4
     endianness: big
     factor: 1
     dataType: uint16
     address: 402538
     metricType: gauge
     help: WPE status
-  - name: se_mixer_open,_htg_circuit_5
+  - name: se_mixer_open__htg_circuit_5
     endianness: big
     factor: 1
     dataType: uint16
     address: 402539
     metricType: gauge
     help: WPE status
-  - name: se_mixer_close,_htg_circuit_5
+  - name: se_mixer_close__htg_circuit_5
     endianness: big
     factor: 1
     dataType: uint16
