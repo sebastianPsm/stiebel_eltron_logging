@@ -84,10 +84,13 @@ if __name__ == "__main__":
                 "help": row["Comments"]
             })
 
-    yaml_dict = {}
-    yaml_dict["name"] = "ISGweb"
-    yaml_dict["protocol"] = "tcp/ip"
-    yaml_dict["modules"] = metrics
+    yaml_dict = {
+        "modules": {
+            "name": "ISGweb",
+            "protocol": "tcp/ip",
+            "metrics": metrics
+        }
+    }
 
     with open(args.out, 'w') as file:
         documents = yaml.dump(yaml_dict, file)
