@@ -85,12 +85,14 @@ if __name__ == "__main__":
             })
 
     yaml_dict = {
-        "modules": [{
-            "name": "ISGweb",
-            "protocol": "tcp/ip",
-            "metrics": metrics
-        }]
+        "modules": [
+            {
+                "name": "ISGweb",
+                "protocol": "tcp/ip",
+                "metrics": metrics
+            }
+        ]
     }
 
     with open(args.out, 'w') as file:
-        documents = yaml.dump(yaml_dict, file)
+        documents = yaml.dump(yaml_dict, file, sort_keys=False)
