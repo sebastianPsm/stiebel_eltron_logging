@@ -88,7 +88,7 @@ if __name__ == "__main__":
         "modules": {
             "name": "ISGweb",
             "protocol": "tcp/ip",
-            "metrics": metrics
+            "metrics": [metrics]
         }
     }
 
