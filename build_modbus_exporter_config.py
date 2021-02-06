@@ -73,9 +73,10 @@ if __name__ == "__main__":
                 raise ValueError(f"Unknown function code for row: {row}")
 
             address += int(row["Modbus address"])-1
+            name = row["Object designation"].lower().replace(" ", "_").replace("-", "_")
 
             metrics.append({
-                "name": args.prefix + row["Object designation"].lower().replace(" ", "_").replace(" ", "-") + unit_str,
+                "name": args.prefix + name + unit_str,
                 "endianness": "big",
                 "factor": factor_converter[row["Data type"]],
                 "dataType": datatype_converter[row["Data type"]],
