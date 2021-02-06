@@ -982,7 +982,7 @@ modules:
     address: 402525
     metricType: gauge
     help: WPM status
-  - name: se_nhz_1/2
+  - name: se_nhz_1_2
     endianness: big
     factor: 1
     dataType: uint16
@@ -1367,7 +1367,7 @@ modules:
     address: 403539
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_1/2_heating_hour
+  - name: se_vd_1_2_heating_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1388,7 +1388,7 @@ modules:
     address: 403542
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_1/2_dhw_hour
+  - name: se_vd_1_2_dhw_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1416,7 +1416,7 @@ modules:
     address: 403546
     metricType: gauge
     help: Runtime reheating stage
-  - name: se_nhz_1/2_hour
+  - name: se_nhz_1_2_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1521,7 +1521,7 @@ modules:
     address: 403561
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_1/2_heating_hour
+  - name: se_vd_1_2_heating_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1542,7 +1542,7 @@ modules:
     address: 403564
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_1/2_dhw_hour
+  - name: se_vd_1_2_dhw_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1654,7 +1654,7 @@ modules:
     address: 403580
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_1/2_heating_hour
+  - name: se_vd_1_2_heating_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1675,7 +1675,7 @@ modules:
     address: 403583
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_1/2_dhw_hour
+  - name: se_vd_1_2_dhw_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1787,7 +1787,7 @@ modules:
     address: 403599
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_1/2_heating_hour
+  - name: se_vd_1_2_heating_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1808,7 +1808,7 @@ modules:
     address: 403602
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_1/2_dhw_hour
+  - name: se_vd_1_2_dhw_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1920,7 +1920,7 @@ modules:
     address: 403618
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_1/2_heating_hour
+  - name: se_vd_1_2_heating_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1941,7 +1941,7 @@ modules:
     address: 403621
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_1/2_dhw_hour
+  - name: se_vd_1_2_dhw_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -2053,7 +2053,7 @@ modules:
     address: 403637
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_1/2_heating_hour
+  - name: se_vd_1_2_heating_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -2074,7 +2074,7 @@ modules:
     address: 403640
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_1/2_dhw_hour
+  - name: se_vd_1_2_dhw_hour
     endianness: big
     factor: 1
     dataType: uint16

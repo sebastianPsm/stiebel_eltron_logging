@@ -73,7 +73,7 @@ if __name__ == "__main__":
                 raise ValueError(f"Unknown function code for row: {row}")
 
             address += int(row["Modbus address"])-1
-            name = row["Object designation"].lower().replace(" ", "_").replace("-", "_").replace(",", "_")
+            name = row["Object designation"].lower().replace(" ", "_").replace("-", "_").replace(",", "_").replace("/", "_")
 
             metrics.append({
                 "name": args.prefix + name + unit_str,
