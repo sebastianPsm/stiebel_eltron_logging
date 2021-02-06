@@ -1031,14 +1031,14 @@ modules:
     address: 402532
     metricType: gauge
     help: WPE status
-  - name: se_diff._controller_pump_1
+  - name: se_diff__controller_pump_1
     endianness: big
     factor: 1
     dataType: uint16
     address: 402533
     metricType: gauge
     help: WPE status
-  - name: se_diff._controller_pump_2
+  - name: se_diff__controller_pump_2
     endianness: big
     factor: 1
     dataType: uint16
