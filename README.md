@@ -13,10 +13,11 @@ py .\build_modbus_exporter_config.py --modbus .\modbus_registers.csv --controlle
 - Running Prometheus/Grafana instance
 - ISG (web?) with Modbus (afaik. all newer devices have an enabled Modbus TCP/IP server)
 - Some Linux system to run the modbus_exporter
+-- Why do I need the modbus_exporter: It is the missing link between the Modbus TCP/IP server running on the Stiebel-Eltron ISG and Prometheus
 
 ## Howto
 - See the official Prometheus/Grafana documentation to get this up & running
-- Download and install the modbus_exporter. See the provided documentation in the repo
+- Download, build and run the modbus_exporter as a service on a Linux system. See the provided documentation in the repo
 - Edit or overwrite the modbus_exporter example [modbus.yaml](https://github.com/RichiH/modbus_exporter/blob/master/modbus.yml) with the modbus.yaml from this project (if you habe a WPM 3 or WPM 3i, then build your own modbus.yaml with the build_modbus_exporter_config.py script)
 - Register the modbus_exporter in Prometheus (prometheus.yaml)
 - If not already done, then register Prometheus in Grafana
