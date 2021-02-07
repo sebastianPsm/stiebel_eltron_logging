@@ -22,5 +22,9 @@ py .\build_modbus_exporter_config.py --modbus .\modbus_registers.csv --controlle
 - If not already done, then register Prometheus in Grafana
 - Build your own dashboard or import [my](https://github.com/sebastianPsm/stiebel_eltron_logging/blob/main/grafana_dashboard.json) Grafana dashboard
 
+## Result
+![Grafana Dashboard 1](https://github.com/sebastianPsm/stiebel_eltron_logging/blob/main/Capture1.PNG)
+![Grafana Dashboard 2](https://github.com/sebastianPsm/stiebel_eltron_logging/blob/main/Capture2.PNG)
+
 ## Resources
 - [Stiebel-Eltron ISG Modbus documentation](https://www.stiebel-eltron.de/content/dam/ste/cdbassets/historic/bedienungs-_u_installationsanleitungen/ISG_Modbus__b89c1c53-6d34-4243-a630-b42cf0633361.pdf)
