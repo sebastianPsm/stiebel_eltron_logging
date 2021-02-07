@@ -19,7 +19,28 @@ py .\build_modbus_exporter_config.py --modbus .\modbus_registers.csv --controlle
 - See the official Prometheus/Grafana documentation to get this up & running
 - Download, build and run the modbus_exporter as a service on a Linux system. See the provided documentation in the repo
 - Edit or overwrite the modbus_exporter example [modbus.yaml](https://github.com/RichiH/modbus_exporter/blob/master/modbus.yml) with the modbus.yaml from this project (if you habe a WPM 3 or WPM 3i, then build your own modbus.yaml with the build_modbus_exporter_config.py script)
-- Register the modbus_exporter in Prometheus (prometheus.yaml)
+- Register the modbus_exporter in Prometheus (prometheus.yaml). For example add the following:
+- 
+  ```
+  ... other jobs from the prometheus.yaml
+  
+  
+  - job_name: 'modbus'
+    metrics_path: /modbus
+    static_configs:
+      - targets:
+        - 192.168.178.45:502  # Modbus device. (IP of the Stiebel-Eltron ISG)
+    params:
+      module: ["ISGweb"]
+      sub_target: ["1"] # Modbus unit identifier, e.g. when using Modbus TCP as a gateway.
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: 127.0.0.1:9602  # The modbus exporter's real hostname:port. (I run prometheus and the modbus_exporter on the same system)
+  ```
 - If not already done, then register Prometheus in Grafana
 - Build your own dashboard or import [my](https://github.com/sebastianPsm/stiebel_eltron_logging/blob/main/grafana_dashboard.json) Grafana dashboard
 
