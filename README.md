@@ -20,7 +20,7 @@ py .\build_modbus_exporter_config.py --modbus .\modbus_registers.csv --controlle
 - Edit or overwrite the modbus_exporter example [modbus.yaml](https://github.com/RichiH/modbus_exporter/blob/master/modbus.yml) with the modbus.yaml from this project (if you habe a WPM 3 or WPM 3i, then build your own modbus.yaml with the build_modbus_exporter_config.py script)
 - Register the modbus_exporter in Prometheus (prometheus.yaml)
 - If not already done, then register Prometheus in Grafana
-- Build your own dashboard or import my Grafana dashboard
+- Build your own dashboard or import [my](https://github.com/sebastianPsm/stiebel_eltron_logging/blob/main/grafana_dashboard.json) Grafana dashboard
 
 ## Resources
 - [Stiebel-Eltron ISG Modbus documentation](https://www.stiebel-eltron.de/content/dam/ste/cdbassets/historic/bedienungs-_u_installationsanleitungen/ISG_Modbus__b89c1c53-6d34-4243-a630-b42cf0633361.pdf)
