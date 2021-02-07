@@ -55,6 +55,7 @@ if __name__ == "__main__":
     print(f'- csv-file with modbus register information: "{args.modbus}"')
     
     metrics = []
+    name_collision_vector = []
     with open(args.modbus, newline='') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=';', quotechar='|')
         for row in reader:
@@ -74,9 +75,14 @@ if __name__ == "__main__":
 
             address += int(row["Modbus address"])-1
             name = row["Object designation"].lower().replace(" ", "_").replace("-", "_").replace(",", "_").replace("/", "_").replace(".", "_")
+            name = args.prefix + name + unit_str
+
+            if name in name_collision_vector:
+                raise ValueError(f'Name collision detected: {name}, {row["Object designation"]}')
+            name_collision_vector.append(name)
 
             metrics.append({
-                "name": args.prefix + name + unit_str,
+                "name": name,
                 "endianness": "big",
                 "factor": factor_converter[row["Data type"]],
                 "dataType": datatype_converter[row["Data type"]],

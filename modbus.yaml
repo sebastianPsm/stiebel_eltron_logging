@@ -114,14 +114,14 @@ modules:
     address: 400520
     metricType: gauge
     help: MFG, if available
-  - name: se_actual_temperature_celsius
+  - name: se_actual_temperature_dhw_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400521
     metricType: gauge
     help: DHW
-  - name: se_set_temperature_celsius
+  - name: se_set_temperature_dhw_celsius
     endianness: big
     factor: 0.1
     dataType: int16
@@ -156,14 +156,14 @@ modules:
     address: 400526
     metricType: gauge
     help: Cooling
-  - name: se_actual_temperature_celsius
+  - name: se_actual_temperature_external_heat_source_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 400530
     metricType: gauge
     help: External heat source
-  - name: se_set_temperature_kelvin
+  - name: se_set_temperature_external_heat_source_kelvin
     endianness: big
     factor: 0.1
     dataType: int16
@@ -765,28 +765,28 @@ modules:
     address: 301512
     metricType: gauge
     help: DHW temperatures
-  - name: se_set_flow_temperature_celsius
+  - name: se_set_flow_temperature_area_cooling_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 301513
     metricType: gauge
     help: Area cooling
-  - name: se_set_room_temperature_celsius
+  - name: se_set_room_temperature_area_cooling_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 301515
     metricType: gauge
     help: Area cooling
-  - name: se_set_flow_temperature_celsius
+  - name: se_set_flow_temperature_fan_cooling_celsius
     endianness: big
     factor: 0.1
     dataType: int16
     address: 301516
     metricType: gauge
     help: Fan cooling
-  - name: se_set_room_temperature_celsius
+  - name: se_set_room_temperature_fan_cooling_celsius
     endianness: big
     factor: 0.1
     dataType: int16
@@ -1129,273 +1129,273 @@ modules:
     address: 402546
     metricType: gauge
     help: Heat pump status 6
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_amount_of_heat_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403500
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403501
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_all_heat_pumps_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403502
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_amount_of_heat_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403503
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403504
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_all_heat_pumps_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403505
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_nhz_heating_total_kilo_watt_hour
+  - name: se_nhz_heating_total_amount_of_heat_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403506
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_nhz_heating_total_mega_watt_hour
+  - name: se_nhz_heating_total_amount_of_heat_all_heat_pumps_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403507
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_nhz_dhw_total_kilo_watt_hour
+  - name: se_nhz_dhw_total_amount_of_heat_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403508
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_nhz_dhw_total_mega_watt_hour
+  - name: se_nhz_dhw_total_amount_of_heat_all_heat_pumps_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403509
     metricType: gauge
     help: Amount of heat - all heat pumps
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_power_consumption_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403510
     metricType: gauge
     help: Power consumption - all heat pumps
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_power_consumption_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403511
     metricType: gauge
     help: Power consumption - all heat pumps
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_power_consumption_all_heat_pumps_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403512
     metricType: gauge
     help: Power consumption - all heat pumps
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_power_consumption_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403513
     metricType: gauge
     help: Power consumption - all heat pumps
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_power_consumption_all_heat_pumps_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403514
     metricType: gauge
     help: Power consumption - all heat pumps
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_power_consumption_all_heat_pumps_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403515
     metricType: gauge
     help: Power consumption - all heat pumps
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_amount_of_heat_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403522
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403523
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp1_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403524
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_amount_of_heat_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403525
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403526
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp1_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403527
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_nhz_heating_total_kilo_watt_hour
+  - name: se_nhz_heating_total_amount_of_heat_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403528
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_nhz_heating_total_mega_watt_hour
+  - name: se_nhz_heating_total_amount_of_heat_hp1_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403529
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_nhz_dhw_total_kilo_watt_hour
+  - name: se_nhz_dhw_total_amount_of_heat_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403530
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_nhz_dhw_total_mega_watt_hour
+  - name: se_nhz_dhw_total_amount_of_heat_hp1_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403531
     metricType: gauge
     help: Amount of heat HP 1
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_power_consumption_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403532
     metricType: gauge
     help: Power consumption HP 1
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403533
     metricType: gauge
     help: Power consumption HP 1
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp1_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403534
     metricType: gauge
     help: Power consumption HP 1
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_power_consumption_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403535
     metricType: gauge
     help: Power consumption HP 1
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp1_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403536
     metricType: gauge
     help: Power consumption HP 1
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp1_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403537
     metricType: gauge
     help: Power consumption HP 1
-  - name: se_vd_1_heating_hour
+  - name: se_vd_1_heating_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403538
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_2_heating_hour
+  - name: se_vd_2_heating_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403539
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_1_2_heating_hour
+  - name: se_vd_1_2_heating_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403540
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_1_dhw_hour
+  - name: se_vd_1_dhw_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403541
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_2_dhw_hour
+  - name: se_vd_2_dhw_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403542
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_1_2_dhw_hour
+  - name: se_vd_1_2_dhw_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403543
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_cooling_hour
+  - name: se_vd_cooling_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
@@ -1423,749 +1423,749 @@ modules:
     address: 403547
     metricType: gauge
     help: Runtime reheating stage
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_amount_of_heat_hp2_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403548
     metricType: gauge
     help: Amount of heat HP 2
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp2_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403549
     metricType: gauge
     help: Amount of heat HP 2
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp2_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403550
     metricType: gauge
     help: Amount of heat HP 2
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_amount_of_heat_hp2_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403551
     metricType: gauge
     help: Amount of heat HP 2
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp2_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403552
     metricType: gauge
     help: Amount of heat HP 2
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp2_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403553
     metricType: gauge
     help: Amount of heat HP 2
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_power_consumption_hp2_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403554
     metricType: gauge
     help: Power consumption HP 2
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp2_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403555
     metricType: gauge
     help: Power consumption HP 2
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp2_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403556
     metricType: gauge
     help: Power consumption HP 2
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_power_consumption_hp2_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403557
     metricType: gauge
     help: Power consumption HP 2
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp2_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403558
     metricType: gauge
     help: Power consumption HP 2
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp2_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403559
     metricType: gauge
     help: Power consumption HP 2
-  - name: se_vd_1_heating_hour
+  - name: se_vd_1_heating_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403560
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_2_heating_hour
+  - name: se_vd_2_heating_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403561
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_1_2_heating_hour
+  - name: se_vd_1_2_heating_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403562
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_1_dhw_hour
+  - name: se_vd_1_dhw_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403563
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_2_dhw_hour
+  - name: se_vd_2_dhw_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403564
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_1_2_dhw_hour
+  - name: se_vd_1_2_dhw_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403565
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_cooling_hour
+  - name: se_vd_cooling_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403566
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_amount_of_heat_hp3_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403567
     metricType: gauge
     help: Amount of heat HP 3
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp3_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403568
     metricType: gauge
     help: Amount of heat HP 3
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp3_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403569
     metricType: gauge
     help: Amount of heat HP 3
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_amount_of_heat_hp3_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403570
     metricType: gauge
     help: Amount of heat HP 3
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp3_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403571
     metricType: gauge
     help: Amount of heat HP 3
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp3_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403572
     metricType: gauge
     help: Amount of heat HP 3
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_power_consumption_hp3_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403573
     metricType: gauge
     help: Power consumption HP 3
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp3_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403574
     metricType: gauge
     help: Power consumption HP 3
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp3_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403575
     metricType: gauge
     help: Power consumption HP 3
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_power_consumption_hp3_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403576
     metricType: gauge
     help: Power consumption HP 3
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp3_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403577
     metricType: gauge
     help: Power consumption HP 3
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp3_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403578
     metricType: gauge
     help: Power consumption HP 3
-  - name: se_vd_1_heating_hour
+  - name: se_vd_1_heating_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403579
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_2_heating_hour
+  - name: se_vd_2_heating_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403580
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_1_2_heating_hour
+  - name: se_vd_1_2_heating_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403581
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_1_dhw_hour
+  - name: se_vd_1_dhw_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403582
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_2_dhw_hour
+  - name: se_vd_2_dhw_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403583
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_1_2_dhw_hour
+  - name: se_vd_1_2_dhw_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403584
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_cooling_hour
+  - name: se_vd_cooling_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403585
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_amount_of_heat_hp4_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403586
     metricType: gauge
     help: Amount of heat HP 4
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp4_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403587
     metricType: gauge
     help: Amount of heat HP 4
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp4_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403588
     metricType: gauge
     help: Amount of heat HP 4
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_amount_of_heat_hp4_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403589
     metricType: gauge
     help: Amount of heat HP 4
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp4_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403590
     metricType: gauge
     help: Amount of heat HP 4
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp4_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403591
     metricType: gauge
     help: Amount of heat HP 4
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_power_consumption_hp4_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403592
     metricType: gauge
     help: Power consumption HP 4
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp4_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403593
     metricType: gauge
     help: Power consumption HP 4
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp4_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403594
     metricType: gauge
     help: Power consumption HP 4
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_power_consumption_hp4_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403595
     metricType: gauge
     help: Power consumption HP 4
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp4_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403596
     metricType: gauge
     help: Power consumption HP 4
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp4_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403597
     metricType: gauge
     help: Power consumption HP 4
-  - name: se_vd_1_heating_hour
+  - name: se_vd_1_heating_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403598
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_2_heating_hour
+  - name: se_vd_2_heating_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403599
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_1_2_heating_hour
+  - name: se_vd_1_2_heating_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403600
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_1_dhw_hour
+  - name: se_vd_1_dhw_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403601
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_2_dhw_hour
+  - name: se_vd_2_dhw_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403602
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_1_2_dhw_hour
+  - name: se_vd_1_2_dhw_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403603
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_cooling_hour
+  - name: se_vd_cooling_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403604
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_amount_of_heat_hp5_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403605
     metricType: gauge
     help: Amount of heat HP 5
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp5_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403606
     metricType: gauge
     help: Amount of heat HP 5
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp5_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403607
     metricType: gauge
     help: Amount of heat HP 5
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_amount_of_heat_hp5_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403608
     metricType: gauge
     help: Amount of heat HP 5
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp5_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403609
     metricType: gauge
     help: Amount of heat HP 5
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp5_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403610
     metricType: gauge
     help: Amount of heat HP 5
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_power_consumption_hp5_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403611
     metricType: gauge
     help: Power consumption HP 5
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp5_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403612
     metricType: gauge
     help: Power consumption HP 5
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp5_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403613
     metricType: gauge
     help: Power consumption HP 5
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_power_consumption_hp5_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403614
     metricType: gauge
     help: Power consumption HP 5
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp5_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403615
     metricType: gauge
     help: Power consumption HP 5
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp5_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403616
     metricType: gauge
     help: Power consumption HP 5
-  - name: se_vd_1_heating_hour
+  - name: se_vd_1_heating_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403617
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_2_heating_hour
+  - name: se_vd_2_heating_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403618
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_1_2_heating_hour
+  - name: se_vd_1_2_heating_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403619
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_1_dhw_hour
+  - name: se_vd_1_dhw_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403620
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_2_dhw_hour
+  - name: se_vd_2_dhw_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403621
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_1_2_dhw_hour
+  - name: se_vd_1_2_dhw_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403622
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_cooling_hour
+  - name: se_vd_cooling_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403623
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_amount_of_heat_hp6_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403624
     metricType: gauge
     help: Amount of heat HP 6
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp6_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403625
     metricType: gauge
     help: Amount of heat HP 6
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_amount_of_heat_hp6_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403626
     metricType: gauge
     help: Amount of heat HP 6
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_amount_of_heat_hp6_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403627
     metricType: gauge
     help: Amount of heat HP 6
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp6_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403628
     metricType: gauge
     help: Amount of heat HP 6
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_amount_of_heat_hp6_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403629
     metricType: gauge
     help: Amount of heat HP 6
-  - name: se_vd_heating_day_kilo_watt_hour
+  - name: se_vd_heating_day_power_consumption_hp6_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403630
     metricType: gauge
     help: Power consumption HP 6
-  - name: se_vd_heating_total_kilo_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp6_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403631
     metricType: gauge
     help: Power consumption HP 6
-  - name: se_vd_heating_total_mega_watt_hour
+  - name: se_vd_heating_total_power_consumption_hp6_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403632
     metricType: gauge
     help: Power consumption HP 6
-  - name: se_vd_dhw_day_kilo_watt_hour
+  - name: se_vd_dhw_day_power_consumption_hp6_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403633
     metricType: gauge
     help: Power consumption HP 6
-  - name: se_vd_dhw_total_kilo_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp6_kilo_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403634
     metricType: gauge
     help: Power consumption HP 6
-  - name: se_vd_dhw_total_mega_watt_hour
+  - name: se_vd_dhw_total_power_consumption_hp6_mega_watt_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403635
     metricType: gauge
     help: Power consumption HP 6
-  - name: se_vd_1_heating_hour
+  - name: se_vd_1_heating_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403636
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_2_heating_hour
+  - name: se_vd_2_heating_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403637
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_1_2_heating_hour
+  - name: se_vd_1_2_heating_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403638
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_1_dhw_hour
+  - name: se_vd_1_dhw_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403639
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_2_dhw_hour
+  - name: se_vd_2_dhw_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403640
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_1_2_dhw_hour
+  - name: se_vd_1_2_dhw_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403641
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_cooling_hour
+  - name: se_vd_cooling_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403642
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_heating_hour
+  - name: se_vd_heating_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403643
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_dhw_hour
+  - name: se_vd_dhw_hp1_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403644
     metricType: gauge
     help: Runtime HP 1
-  - name: se_vd_heating_hour
+  - name: se_vd_heating_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403645
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_dhw_hour
+  - name: se_vd_dhw_hp2_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403646
     metricType: gauge
     help: Runtime HP 2
-  - name: se_vd_heating_hour
+  - name: se_vd_heating_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403647
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_dhw_hour
+  - name: se_vd_dhw_hp3_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403648
     metricType: gauge
     help: Runtime HP 3
-  - name: se_vd_heating_hour
+  - name: se_vd_heating_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403649
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_dhw_hour
+  - name: se_vd_dhw_hp4_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403650
     metricType: gauge
     help: Runtime HP 4
-  - name: se_vd_heating_hour
+  - name: se_vd_heating_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403651
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_dhw_hour
+  - name: se_vd_dhw_hp5_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403652
     metricType: gauge
     help: Runtime HP 5
-  - name: se_vd_heating_hour
+  - name: se_vd_heating_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
     address: 403653
     metricType: gauge
     help: Runtime HP 6
-  - name: se_vd_dhw_hour
+  - name: se_vd_dhw_hp6_hour
     endianness: big
     factor: 1
     dataType: uint16
