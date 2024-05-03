@@ -49,4 +49,4 @@ py .\build_modbus_exporter_config.py --modbus .\modbus_registers.csv --controlle
 ![Grafana Dashboard 2](https://github.com/sebastianPsm/stiebel_eltron_logging/blob/main/Capture2.PNG)
 
 ## Resources
-- [Stiebel-Eltron ISG Modbus documentation](https://www.stiebel-eltron.de/content/dam/ste/cdbassets/historic/bedienungs-_u_installationsanleitungen/ISG_Modbus__b89c1c53-6d34-4243-a630-b42cf0633361.pdf)
+- [Stiebel-Eltron ISG Modbus documentation]([https://www.stiebel-eltron.de/content/dam/ste/cdbassets/historic/bedienungs-_u_installationsanleitungen/ISG_Modbus__b89c1c53-6d34-4243-a630-b42cf0633361.pdf](https://www.stiebel-eltron.de/content/dam/ste/cdbassets/current/bedienungs-_u_installationsanleitungen/instructionandinstallationmanual_doc-00067863.pdf))
